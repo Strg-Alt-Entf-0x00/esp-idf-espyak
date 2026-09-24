@@ -1,0 +1,492 @@
+menu "espyak Configuration"
+
+    menu "Language Selection"
+        comment "Select languages to include in build"
+        comment "Each language adds ~5-200KB to binary size"
+
+        config ESPYAK_LANG_EN
+            bool "English (en) - 6,641 entries"
+            default y
+            help
+                English language dictionary with 6,641 entries.
+                Required for most applications.
+
+        config ESPYAK_LANG_DE
+            bool "German (de) - 2,672 entries"
+            default n
+
+        config ESPYAK_LANG_FR
+            bool "French (fr) - 2,424 entries"
+            default n
+
+        config ESPYAK_LANG_ES
+            bool "Spanish (es) - 1,999 entries"
+            default n
+
+        config ESPYAK_LANG_IT
+            bool "Italian (it) - 11,030 entries"
+            default n
+
+        config ESPYAK_LANG_PT
+            bool "Portuguese (pt) - 3,300 entries"
+            default n
+
+        config ESPYAK_LANG_RU
+            bool "Russian (ru) - 1,853 entries"
+            default n
+
+        config ESPYAK_LANG_ZH
+            bool "Chinese/Mandarin (cmn) - 5,499 entries"
+            default n
+
+        config ESPYAK_LANG_JA
+            bool "Japanese (ja) - 1,662 entries"
+            default n
+
+        config ESPYAK_LANG_KO
+            bool "Korean (ko) - 1,771 entries"
+            default n
+
+        config ESPYAK_LANG_AR
+            bool "Arabic (ar) - 31,973 entries"
+            default n
+
+        config ESPYAK_LANG_HI
+            bool "Hindi (hi) - 1,951 entries"
+            default n
+
+        config ESPYAK_LANG_NL
+            bool "Dutch (nl) - 3,447 entries"
+            default n
+
+        config ESPYAK_LANG_SV
+            bool "Swedish (sv) - 1,960 entries"
+            default n
+
+        config ESPYAK_LANG_NO
+            bool "Norwegian (no) - 232 entries"
+            default n
+
+        config ESPYAK_LANG_DA
+            bool "Danish (da) - 12,589 entries"
+            default n
+
+        config ESPYAK_LANG_FI
+            bool "Finnish (fi) - 1,968 entries"
+            default n
+
+        config ESPYAK_LANG_PL
+            bool "Polish (pl) - 4,411 entries"
+            default n
+
+        config ESPYAK_LANG_TR
+            bool "Turkish (tr) - 1,943 entries"
+            default n
+
+        config ESPYAK_LANG_CS
+            bool "Czech (cs) - 2,028 entries"
+            default n
+
+        config ESPYAK_LANG_HU
+            bool "Hungarian (hu) - 5,543 entries"
+            default n
+
+        config ESPYAK_LANG_EL
+            bool "Greek (el) - 2,001 entries"
+            default n
+
+        config ESPYAK_LANG_HE
+            bool "Hebrew (he) - 264 entries"
+            default n
+
+        config ESPYAK_LANG_TH
+            bool "Thai (th) - 10 entries"
+            default n
+
+        config ESPYAK_LANG_VI
+            bool "Vietnamese (vi) - 1,773 entries"
+            default n
+
+        config ESPYAK_LANG_ID
+            bool "Indonesian (id) - 1,771 entries"
+            default n
+
+        config ESPYAK_LANG_UK
+            bool "Ukrainian (uk) - 166 entries"
+            default n
+
+        config ESPYAK_LANG_RO
+            bool "Romanian (ro) - 3,719 entries"
+            default n
+
+        config ESPYAK_LANG_AF
+            bool "Afrikaans (af) - 3,190 entries"
+            default n
+
+        config ESPYAK_LANG_AM
+            bool "Amharic (am) - 1,670 entries"
+            default n
+
+        config ESPYAK_LANG_AN
+            bool "Aragonese (an) - 476 entries"
+            default n
+
+        config ESPYAK_LANG_AS
+            bool "Assamese (as) - 207 entries"
+            default n
+
+        config ESPYAK_LANG_AZ
+            bool "Azerbaijani (az) - 1,722 entries"
+            default n
+
+        config ESPYAK_LANG_BA
+            bool "Bashkir (ba) - 70 entries"
+            default n
+
+        config ESPYAK_LANG_BE
+            bool "Belarusian (be) - 77 entries"
+            default n
+
+        config ESPYAK_LANG_BG
+            bool "Bulgarian (bg) - 4,655 entries"
+            default n
+
+        config ESPYAK_LANG_BN
+            bool "Bengali (bn) - 2,009 entries"
+            default n
+
+        config ESPYAK_LANG_BPY
+            bool "Bishnupriya (bpy) - 179 entries"
+            default n
+
+        config ESPYAK_LANG_BS
+            bool "Bosnian (bs) - 2,182 entries"
+            default n
+
+        config ESPYAK_LANG_CA
+            bool "Catalan (ca) - 14,204 entries"
+            default n
+
+        config ESPYAK_LANG_CMN
+            bool "Mandarin Chinese (cmn) - 5,499 entries"
+            default n
+
+        config ESPYAK_LANG_CY
+            bool "Welsh (cy) - 1,798 entries"
+            default n
+
+        config ESPYAK_LANG_EO
+            bool "Esperanto (eo) - 235 entries"
+            default n
+
+        config ESPYAK_LANG_ET
+            bool "Estonian (et) - 1,934 entries"
+            default n
+
+        config ESPYAK_LANG_EU
+            bool "Basque (eu) - 1,829 entries"
+            default n
+
+        config ESPYAK_LANG_FA
+            bool "Persian (fa) - 14,887 entries"
+            default n
+
+        config ESPYAK_LANG_FO
+            bool "Faroese (fo) - 228,010 entries"
+            default n
+            help
+                WARNING: Very large dictionary! Use only if needed.
+
+        config ESPYAK_LANG_GA
+            bool "Irish (ga) - 1,874 entries"
+            default n
+
+        config ESPYAK_LANG_GD
+            bool "Scottish Gaelic (gd) - 1,739 entries"
+            default n
+
+        config ESPYAK_LANG_GN
+            bool "Guarani (gn) - 147 entries"
+            default n
+
+        config ESPYAK_LANG_GRC
+            bool "Ancient Greek (grc) - 21 entries"
+            default n
+
+        config ESPYAK_LANG_GU
+            bool "Gujarati (gu) - 1,811 entries"
+            default n
+
+        config ESPYAK_LANG_HAK
+            bool "Hakka Chinese (hak) - 22 entries"
+            default n
+
+        config ESPYAK_LANG_HAW
+            bool "Hawaiian (haw) - 99 entries"
+            default n
+
+        config ESPYAK_LANG_HR
+            bool "Croatian (hr) - 2,186 entries"
+            default n
+
+        config ESPYAK_LANG_HT
+            bool "Haitian Creole (ht) - 50 entries"
+            default n
+
+        config ESPYAK_LANG_HY
+            bool "Armenian (hy) - 1,757 entries"
+            default n
+
+        config ESPYAK_LANG_IA
+            bool "Interlingua (ia) - 15,485 entries"
+            default n
+
+        config ESPYAK_LANG_IO
+            bool "Ido (io) - 50 entries"
+            default n
+
+        config ESPYAK_LANG_IS
+            bool "Icelandic (is) - 1,951 entries"
+            default n
+
+        config ESPYAK_LANG_JBO
+            bool "Lojban (jbo) - 85 entries"
+            default n
+
+        config ESPYAK_LANG_KA
+            bool "Georgian (ka) - 1,783 entries"
+            default n
+
+        config ESPYAK_LANG_KAA
+            bool "Karakalpak (kaa) - 26 entries"
+            default n
+
+        config ESPYAK_LANG_KK
+            bool "Kazakh (kk) - 51 entries"
+            default n
+
+        config ESPYAK_LANG_KL
+            bool "Greenlandic (kl) - 82 entries"
+            default n
+
+        config ESPYAK_LANG_KN
+            bool "Kannada (kn) - 1,897 entries"
+            default n
+
+        config ESPYAK_LANG_KOK
+            bool "Konkani (kok) - 188 entries"
+            default n
+
+        config ESPYAK_LANG_KU
+            bool "Kurdish (ku) - 106 entries"
+            default n
+
+        config ESPYAK_LANG_KY
+            bool "Kyrgyz (ky) - 1,764 entries"
+            default n
+
+        config ESPYAK_LANG_LA
+            bool "Latin (la) - 202 entries"
+            default n
+
+        config ESPYAK_LANG_LB
+            bool "Luxembourgish (lb) - 35,661 entries"
+            default n
+            help
+                WARNING: Large dictionary!
+
+        config ESPYAK_LANG_LFN
+            bool "Lingua Franca Nova (lfn) - 126 entries"
+            default n
+
+        config ESPYAK_LANG_LT
+            bool "Lithuanian (lt) - 1,803 entries"
+            default n
+
+        config ESPYAK_LANG_LV
+            bool "Latvian (lv) - 2,380 entries"
+            default n
+
+        config ESPYAK_LANG_MI
+            bool "Maori (mi) - 14 entries"
+            default n
+
+        config ESPYAK_LANG_MK
+            bool "Macedonian (mk) - 1,814 entries"
+            default n
+
+        config ESPYAK_LANG_ML
+            bool "Malayalam (ml) - 1,804 entries"
+            default n
+
+        config ESPYAK_LANG_MR
+            bool "Marathi (mr) - 1,872 entries"
+            default n
+
+        config ESPYAK_LANG_MS
+            bool "Malay (ms) - 2,330 entries"
+            default n
+
+        config ESPYAK_LANG_MT
+            bool "Maltese (mt) - 207 entries"
+            default n
+
+        config ESPYAK_LANG_MTO
+            bool "Totontepec Mixe (mto) - 182 entries"
+            default n
+
+        config ESPYAK_LANG_MY
+            bool "Burmese (my) - 1,647 entries"
+            default n
+
+        config ESPYAK_LANG_NCI
+            bool "Classical Nahuatl (nci) - 16 entries"
+            default n
+
+        config ESPYAK_LANG_NE
+            bool "Nepali (ne) - 1,828 entries"
+            default n
+
+        config ESPYAK_LANG_NOG
+            bool "Nogai (nog) - 37 entries"
+            default n
+
+        config ESPYAK_LANG_OM
+            bool "Oromo (om) - 85 entries"
+            default n
+
+        config ESPYAK_LANG_OR
+            bool "Odia (or) - 1,821 entries"
+            default n
+
+        config ESPYAK_LANG_PA
+            bool "Punjabi (pa) - 1,828 entries"
+            default n
+
+        config ESPYAK_LANG_PAP
+            bool "Papiamento (pap) - 83 entries"
+            default n
+
+        config ESPYAK_LANG_PY
+            bool "Pyash (py) - 106 entries"
+            default n
+
+        config ESPYAK_LANG_QDB
+            bool "Lang Bai (qdb) - 168 entries"
+            default n
+
+        config ESPYAK_LANG_QU
+            bool "Quechua (qu) - 76 entries"
+            default n
+
+        config ESPYAK_LANG_QUC
+            bool "K'iche' (quc) - 10 entries"
+            default n
+
+        config ESPYAK_LANG_QYA
+            bool "Quenya (qya) - 38 entries"
+            default n
+
+        config ESPYAK_LANG_SD
+            bool "Sindhi (sd) - 1,827 entries"
+            default n
+
+        config ESPYAK_LANG_SHN
+            bool "Shan (shn) - 4,175 entries"
+            default n
+
+        config ESPYAK_LANG_SI
+            bool "Sinhala (si) - 1,790 entries"
+            default n
+
+        config ESPYAK_LANG_SJN
+            bool "Sindarin (sjn) - 21 entries"
+            default n
+
+        config ESPYAK_LANG_SK
+            bool "Slovak (sk) - 1,977 entries"
+            default n
+
+        config ESPYAK_LANG_SL
+            bool "Slovenian (sl) - 1,823 entries"
+            default n
+
+        config ESPYAK_LANG_SMJ
+            bool "Lule Sami (smj) - 2,603 entries"
+            default n
+
+        config ESPYAK_LANG_SQ
+            bool "Albanian (sq) - 1,765 entries"
+            default n
+
+        config ESPYAK_LANG_SR
+            bool "Serbian (sr) - 2,115 entries"
+            default n
+
+        config ESPYAK_LANG_SW
+            bool "Swahili (sw) - 1,803 entries"
+            default n
+
+        config ESPYAK_LANG_TA
+            bool "Tamil (ta) - 2,181 entries"
+            default n
+
+        config ESPYAK_LANG_TE
+            bool "Telugu (te) - 1,793 entries"
+            default n
+
+        config ESPYAK_LANG_TI
+            bool "Tigrinya (ti) - 1,720 entries"
+            default n
+
+        config ESPYAK_LANG_TK
+            bool "Turkmen (tk) - 926 entries"
+            default n
+
+        config ESPYAK_LANG_TN
+            bool "Tswana (tn) - 107 entries"
+            default n
+
+        config ESPYAK_LANG_TT
+            bool "Tatar (tt) - 74 entries"
+            default n
+
+        config ESPYAK_LANG_UG
+            bool "Uyghur (ug) - 37 entries"
+            default n
+
+        config ESPYAK_LANG_UR
+            bool "Urdu (ur) - 4,457 entries"
+            default n
+
+        config ESPYAK_LANG_UZ
+            bool "Uzbek (uz) - 114 entries"
+            default n
+
+        config ESPYAK_LANG_XEX
+            bool "Xextan (xex) - 43 entries"
+            default n
+
+        config ESPYAK_LANG_YUE
+            bool "Cantonese (yue) - 5,457 entries"
+            default n
+
+    endmenu
+
+    config ESPYAK_USE_BINARY_DICT
+        bool "Use binary dictionary format"
+        default y
+        help
+            Convert C dictionaries to compact binary format at build time.
+            Reduces memory usage by ~70% and improves load time.
+            Disable only for debugging.
+
+    config ESPYAK_DICT_COMPRESSION
+        bool "Enable dictionary compression"
+        depends on ESPYAK_USE_BINARY_DICT
+        default y
+        help
+            Use LZ4 compression on dictionary data.
+            Reduces FLASH usage by ~40-60% with minimal runtime cost.
+
+endmenu
