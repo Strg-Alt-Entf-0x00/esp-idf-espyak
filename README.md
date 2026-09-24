@@ -56,3 +56,6 @@ This project is open-source. Please see the LICENSE file for details.
 
 ## Acknowledgements
 This project is an ESP-IDF packaged port of the original **[espyak](https://github.com/TigreGotico/espyak)** project created by [TigreGotico](https://github.com/TigreGotico). All credit for the foundational C-implementation of the phonemizer goes to the original author.
+
+## ⚠️ Known Issues / Testing Phase
+> **Note:** This component is currently in an active testing phase. There might still be some bugs (e.g., related to special characters or phoneme edge-cases). I will continuously try to detect and fix these issues gradually over time.
