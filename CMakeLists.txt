@@ -197,7 +197,7 @@ if(CONFIG_ESPYAK_USE_BINARY_DICT)
     # Convert dictionaries at build time
     add_custom_target(espyak_convert_dicts
         COMMAND ${Python3_EXECUTABLE} 
-                ${CMAKE_CURRENT_SOURCE_DIR}/../../tools/dict_to_binary.py
+                ${CMAKE_CURRENT_SOURCE_DIR}/tools/dict_to_binary.py
                 ${CMAKE_CURRENT_SOURCE_DIR}/data/dict
                 -o ${DICT_BIN_DIR}
                 ${COMPRESSION_FLAG}
